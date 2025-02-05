@@ -6,6 +6,11 @@ public class SalariedEmployee extends Employee {
     public SalariedEmployee(String name, String role, int vacation_days, float biweekly) {
         super(name, role, vacation_days);
         this.biweekly = biweekly;
+        setSalaryCalculator(new SalariedSalaryCalculator());
+    }
+
+    public void raiseSalary(float raise) {
+        setBiweekly(biweekly += raise);
     }
 
     public float getBiweekly() {

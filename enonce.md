@@ -33,15 +33,14 @@ de leur code tout en continuant de livrer de nouvelles fonctionnalités.
 
 En guise d’exemple, vous vous attaquez au module de paie `payroll` qui présente plusieurs **code smells** et mauvais 
 designs. Les employés de la start-up vous expliquent que le module de paie permet de gérer les employés, la création 
-de chèques de paie, la gestion des vacances (seulement pour la version longue) et quelques statistiques sur la paie.
+de chèques de paie et quelques statistiques sur la paie.
 
 ---
 
 ## 3. Tâche
 
 On désire ajouter un nouveau type d’employé au module de paie : un employé à contrat qui n’est payé qu’à la fin de 
-certains milestones du projet. Les employés à contrat ne peuvent pas prendre de jours de vacances 
-(seulement pour la version longue).
+certains milestones du projet.
 
 Toutefois, étant donné la pauvre qualité du code, cet ajout se révèle être tout un défi. Le code viole les principes 
 de Clean Code et présente de mauvais designs. Vous relevez notamment que le code est exceptionnellement impropre et 
